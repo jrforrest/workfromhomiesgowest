@@ -1,0 +1,41 @@
+![](assets/wfhomies.png)
+
+:::{.intro}
+
+Take life to the road and see the great parks of the West with an eight week
+tour of the West's best parks and co-working spaces.
+
+:::
+
+![](assets/wfhomies_map.png)
+
+## Living
+
+This vehicle-based adventure will be putting us in some of the grandest
+parks in the North American continent with camping close enough to towns
+that the trip can be done without a single night spent under a proper roof.
+
+## Working
+
+Each stop has been based around the availability of a fully provisioned co-working
+space with the amenities you need to focus on your job when it's time to work.
+
+Daily drop in fees are usually fairly pricey for a good coworking space,
+but with group rate negotiation and week-long commitments its looking
+like we'll be able to get down to get in the neighborhood of $100 per
+week per desk.
+
+## Playing
+
+With trails, lakes and climbing routes available at just about every stop there
+won't be any lack of ways to go get after it when the day's work is done.
+
+## Itinerary
+
+:::{.places}
+
+<% stops.each do |stop| %>
+  ### Week <%= stop.week_number %>: <%= stop.location_name %> / <%= stop.park.name %>
+
+  <%= stop.description %>
+<% end %>
